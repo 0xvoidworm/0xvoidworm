@@ -1,72 +1,55 @@
-```
- ██▒   █▓ ▒█████   ██▓▓█████▄  █     █░ ▒█████   ██▀███   ███▄ ▄███▓
-▓██░   █▒▒██▒  ██▒▓██▒▒██▀ ██▌▓█░ █ ░█░▒██▒  ██▒▓██ ▒ ██▒▓██▒▀█▀ ██▒
- ▓██  █▒░▒██░  ██▒▒██▒░██   █▌▒█░ █ ░█ ▒██░  ██▒▓██ ░▄█ ▒▓██    ▓██░
-  ▒██ █░░▒██   ██░░██░░▓█▄   ▌░█░ █ ░█ ▒██   ██░▒██▀▀█▄  ▒██    ▒██
-   ▒▀█░  ░ ████▓▒░░██░░▒████▓ ░░██▒██▓ ░ ████▓▒░░██▓ ▒██▒▒██▒   ░██▒
-   ░ ▐░  ░ ▒░▒░▒░ ░▓   ▒▒▓  ▒ ░ ▓░▒ ▒  ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░ ▒░   ░  ░
-   ░ ░░    ░ ▒ ▒░  ▒ ░ ░ ▒  ▒   ▒ ░ ░    ░ ▒ ▒░   ░▒ ░ ▒░░  ░      ░
-     ░░  ░ ░ ░ ▒   ▒ ░ ░ ░  ░   ░   ░  ░ ░ ░ ▒    ░░   ░ ░      ░
-      ░      ░ ░   ░     ░         ░        ░ ░     ░            ░
-```
+# 0xvoidworm
 
-### `whoami`
+Operator repository index split into three lanes: **Trading / Market-AI**, **Cyber / Security**, and **Infra / Operator / Shared**.
 
-Offensive security researcher. Solo operator. Building tools that think.
+Positioning:
 
-```bash
-$ cat /etc/motd
+- **Trading lane** = AI-assisted market evidence and operator systems. It is not an “AI auto-trader that guarantees profit”. The lane emphasizes proof windows, paper evidence, disabled-live controls, and auditability.
+- **Cyber lane** = separate lab/security tooling. It is not mixed into the market thesis.
+- **Infra lane** = shared operator utilities, pages, profile, configuration, and supporting tools.
 
-  role     : red team operator / tool developer
-  focus    : AI-augmented offensive security
-  stack    : Python · Rust · C · Go · Bash
-  env      : WSL2 + Kali · Docker · MITRE ATT&CK
-  certs    : learning by breaking
-```
+## Trading / Market-AI
 
----
+| repo | status | role |
+|---|---|---|
+| [project-umbrela](https://github.com/0xvoidworm/project-umbrela) | `core` | Sober operator cockpit/UI for local market evidence, proof windows, and HOT CEX review. |
+| [worm-trading-agent](https://github.com/0xvoidworm/worm-trading-agent) | `active` | Future execution/observability backend; live execution remains disabled until proof and controls are formalized. |
+| [worm-magotshtora](https://github.com/0xvoidworm/worm-magotshtora) | `archive` | Legacy AI trading terminal / regime-overseer research. |
+| [worm-sa21magot](https://github.com/0xvoidworm/worm-sa21magot) | `archive` | Prediction-market pilot and negative-edge autopsy. |
 
-### `ls -la /projects`
+See [`docs/trading.md`](docs/trading.md).
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| `f4worm` | AI-driven autonomous pentesting framework | Python |
-| `dotfiles` | WSL2 hardened config — Kali-style prompt, aliases | Bash |
-| `red-notes` | Offensive security cheatsheets & methodology | Markdown |
+## Cyber / Security
 
----
+| repo | status | role |
+|---|---|---|
+| [worm-grasiax](https://github.com/0xvoidworm/worm-grasiax) | `core` | Pentest toolkit / Claude-direct killchain operations. |
+| [worm-venice-agent](https://github.com/0xvoidworm/worm-venice-agent) | `hibernate` | F4WORM purple-team operator codebase, currently hibernated. |
+| [red-notes](https://github.com/0xvoidworm/red-notes) | `active` | Offensive security cheatsheets and methodology notes. |
+| [worm-magotarena](https://github.com/0xvoidworm/worm-magotarena) | `deprecated` | Historical Win11 pentest distro scaffold. |
 
-### `cat /proc/interests`
+See [`docs/cyber.md`](docs/cyber.md).
 
-```
-offensive-security    ████████████████████  95%
-AI/LLM engineering    ███████████████████░  90%
-malware-analysis      ██████████████████░░  85%
-reverse-engineering   ████████████████░░░░  75%
-crypto/trading        ██████████░░░░░░░░░░  50%
-```
+## Infra / Operator / Shared
 
----
+| repo | status | role |
+|---|---|---|
+| [worm-search](https://github.com/0xvoidworm/worm-search) | `core` | Operator newtab / launcher / control-plane. |
+| [worm-mistral-cli](https://github.com/0xvoidworm/worm-mistral-cli) | `utility` | Mistral/LLM CLI utility. |
+| [worm-tiktok-bot](https://github.com/0xvoidworm/worm-tiktok-bot) | `utility` | Content/Telegram utility bot. |
+| [dotfiles](https://github.com/0xvoidworm/dotfiles) | `active` | Hardened WSL2/offsec environment configuration. |
+| [worm-homedir-vault](https://github.com/0xvoidworm/worm-homedir-vault) | `utility` | Encrypted home-directory backup vault. |
+| [0xvoidworm.github.io](https://github.com/0xvoidworm/0xvoidworm.github.io) | `active` | Public writeups and GitHub Pages index. |
+| [0xvoidworm](https://github.com/0xvoidworm/0xvoidworm) | `core` | This profile README and repository index. |
 
-### `netstat -an | grep ESTABLISHED`
+See [`docs/infra.md`](docs/infra.md).
 
-```
-0xvoidworm  <-->  MITRE ATT&CK
-0xvoidworm  <-->  HackTheBox
-0xvoidworm  <-->  CTF
-0xvoidworm  <-->  Threat Intelligence
-```
+## Canonical taxonomy
 
----
+The current classification convention is documented in [`docs/repo-taxonomy.md`](docs/repo-taxonomy.md):
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=0xvoidworm&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" />
-</p>
+- exactly one lane topic: `lane-trading`, `lane-cyber`, or `lane-infra`
+- one status topic: `status-core`, `status-active`, `status-archive`, `status-hibernate`, `status-utility`, or `status-deprecated`
+- theme topics describe the role without changing lane/status
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=0xvoidworm&theme=radical&hide_border=true&background=0d1117" />
-</p>
-
-<p align="center">
-  <code>// the void consumes. the worm persists.</code>
-</p>
+No repository renames, visibility changes, deletes, or GitHub archive actions are implied by this index.
