@@ -15,6 +15,10 @@ This lane contains AI-assisted market evidence systems and operator tooling. It 
 |---|---|---|
 | `worm-magotshtora` | archive | Legacy AI trading terminal / regime-overseer research. |
 | `worm-sa21magot` | archive | Prediction-market pilot and negative-edge autopsy. |
+| `binance-sniper` | archive | Binance Desk (Rust desktop) + engine-rs paper engine. Real-order path is user-activated only; research results reported as-is, including negatives. |
+| `lighter-live-desk` | archive | Local BTC perpetual desk: engine, dashboard API, Vite frontend. Observe-only by default; mainnet orders untested. |
+| `sniperfx-mt5` | archive | MQL5 trend-continuation EA + read-only Alpha Lab. Ships `InpTradingEnabled=false`. |
+| `lldesk-profile-capture` | archive | py-spy/bpftrace profiling sandbox for the desk; dummy-only, production path disabled. |
 
 ## Engine note
 
